@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 19:15:32 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/30 22:57:38 by ysantos-         ###   ########.fr       */
+/*   Updated: 2022/11/19 23:49:04 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
+# include <stdarg.h>
+# define LLONG unsigned long long
+# define BUFFER_SIZE 40
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MANDATORY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -78,5 +84,19 @@ int		ft_lstsize(t_list *lst);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EXTRA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+//Get Next Line
+char	*get_next_line(int fd);
+int		has_newline(char *buffer);
+char	*bufferjoin(char *str, char *buffer);
+
+//Printf
+int		ft_printf(const char *str, ...);
+int		f_putnbr(int n);
+int		base_conversor(LLONG n, char *str, LLONG base);
+int		f_putnbr_u(unsigned int n, char *str, LLONG base);
+int		f_putnbr_ul(unsigned long n);
 
 #endif

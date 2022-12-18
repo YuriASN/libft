@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/*	Return 1 line of fd everytime function is called.
+	Or NULL if noting is read or end of file is reached*/
 char	*get_next_line(int fd)
 {
 	static char		buffer[FOPEN_MAX][BUFFER_SIZE + 1];

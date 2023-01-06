@@ -6,14 +6,11 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 23:35:34 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/03 23:01:16 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:06:14 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/* Returns a string representing the integer received as an argument.
-Negative numbers must be handled. */
 
 static int	nbr_size(long int n)
 {
@@ -35,6 +32,8 @@ static int	nbr_size(long int n)
 	return (i);
 }
 
+/* Returns a string representing the integer received as an argument.
+Negative numbers must be handled. */
 char	*ft_itoa(int n)
 {
 	int		i;

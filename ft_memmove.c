@@ -6,12 +6,13 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 15:49:41 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/03 21:51:59 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:33:38 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Copies N characters from memory SRC to memory DEST. */
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;

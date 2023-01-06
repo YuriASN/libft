@@ -6,10 +6,11 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 21:23:32 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/02/24 21:23:32 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:12:26 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Changes a lowercase char to uppercase. */
 int	ft_toupper(int x)
 {
 	if (x >= 97 && x <= 122)

@@ -6,15 +6,14 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 15:24:10 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/31 01:45:59 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:07:41 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Copies n characters from memory area src to memory area dest.
-This function returns a pointer to destination, which is dest. */
-
 #include "libft.h"
 
+/* Copies n characters from memory area src to memory area dest.
+This function returns a pointer to destination, which is dest. */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;

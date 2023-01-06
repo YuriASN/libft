@@ -6,16 +6,15 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 22:38:58 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/24 03:13:17 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:08:39 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /* Returns an array of strings obtained by splitting ’s’
 using the character ’c’ as a delimiter.
 The array must end with a NULL pointer. */
-
-#include "libft.h"
-
 static size_t	count_strings(char const *s, char const c)
 {
 	size_t	i;

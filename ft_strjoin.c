@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 23:33:34 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/24 02:40:26 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:10:25 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 /*
 Allocates (with malloc(3)) and returns a new
 string, which is the result of the concatenation
-of ’s1’ and ’s2’.
-*/
-
+of ’s1’ and ’s2’. */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*newstr;

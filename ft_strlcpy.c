@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 16:57:26 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/28 22:44:25 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:10:32 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 /*
 Copy the number of bytes of dstsize from src to dst.
-Note that dstsize must be the length you want +1 for the null character
-*/
-
+Note that dstsize must be the length you want +1 for the null character. */
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

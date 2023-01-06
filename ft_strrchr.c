@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 19:32:38 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/30 23:32:49 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:11:02 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 /* searches for the LAST occurrence of the character c (an unsigned char)
 in the string pointed to, by the argument str. */
-
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;

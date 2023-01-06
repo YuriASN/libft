@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 17:28:48 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/27 17:44:23 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:06:43 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 /* Iterates the list ’lst’ and applies the function
 ’f’ on the content of each node. */
-
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)

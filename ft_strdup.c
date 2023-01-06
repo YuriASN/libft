@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 22:49:42 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/29 21:46:55 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:09:33 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 which is a duplicate of the string pointed to by str.
 The memory obtained is done using malloc and hence it can be freed using free(). 
 It returns a pointer to the duplicated string s. */
-
 char	*ft_strdup(const char *str)
 {
 	char	*cpy;

@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 15:56:29 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/03 20:59:45 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:10:19 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@
 strlcat() take the full size of the buffer (not just the length)
 and guarantee to NUL-terminate the result
 (as long as there is at least one byte free in dst).
-#Note that a byte for the NULL should be included in size.
- */
-
+#Note that a byte for the NULL should be included in size. */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dstlen;

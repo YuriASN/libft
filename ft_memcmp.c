@@ -6,17 +6,16 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 14:53:25 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/03 20:15:36 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:07:30 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* compares the first n bytes of memory area str1 and memory area str2.
+#include "libft.h"
+
+/* Compares the first n bytes of memory area str1 and memory area str2.
 if Return value < 0 then it indicates str1 is less than str2.
 if Return value > 0 then it indicates str2 is less than str1.
 if Return value = 0 then it indicates str1 is equal to str2.*/
-
-#include "libft.h"
-
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
 	size_t	index;

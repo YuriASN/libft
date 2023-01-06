@@ -6,14 +6,13 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:25:29 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/30 22:04:03 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:10:50 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //Compares at most the first n bytes of str1 and str2.
-
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	size_t	i;

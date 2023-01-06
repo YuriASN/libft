@@ -6,17 +6,16 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 22:31:43 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/30 23:27:09 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:07:09 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /* searches for the FIRST occurrence of the character c (an unsigned char)
 in the first n bytes of the string pointed to, by the argument str.
 This function returns a pointer to the matching byte
 or NULL if the character does not occur in the given memory area. */
-
-#include "libft.h"
-
 void	*ft_memchr(const void *str, int c, size_t bytes)
 {
 	size_t	index;

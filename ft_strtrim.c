@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 23:49:37 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/04/24 02:56:09 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:11:11 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 /*
 Allocates (with malloc(3)) and returns a copy of
 ’s1’ with the characters specified in ’set’ removed
-from the beginning and the end of the string.
-*/
-
+from the beginning and the end of the string. */
 static int	is_equal(char const *s1, char const *set)
 {
 	int	i;

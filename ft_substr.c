@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 21:00:22 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/11/19 23:50:45 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:11:18 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 Allocates (with malloc(3)) and returns a substring
 from the string ’s’.
 The substring begins at index ’start’ (bit x) and is of
-maximum size ’len’.
-*/
-
+maximum size ’len’. */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;

@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 15:29:59 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/03/27 15:40:13 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/01/06 22:06:58 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 /* lst: teh beggining of the list.
 Returns the last node of the list */
-
 int	ft_lstsize(t_list *lst)
 {
 	int	count;

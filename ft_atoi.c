@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 21:43:11 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 21:48:03 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/03/18 16:00:13 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ static void	jump_spaces(const char *str, int *x)
 If no valid conversion could be performed, it returns zero. */
 int	ft_atoi(const char *str)
 {
-	int	nbr;
-	int	sign;
-	int	i;
+	ssize_t	nbr;
+	ssize_t	sign;
+	int		i;
 
 	i = 0;
 	nbr = 0;
@@ -47,11 +47,9 @@ int	ft_atoi(const char *str)
 		nbr += str[i] - '0';
 		++i;
 	}
-	if (i > 19 && sign < 0)
+	if (nbr * sign > 2147483647 || nbr * sign < -2147483648)
 		return (0);
-	else if (i > 19 && sign > 0)
-		return (-1);
-	return (nbr * sign);
+	return ((int)nbr * sign);
 }
 
 /* int	main(void)

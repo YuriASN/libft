@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/28 19:23:52 by ysantos-          #+#    #+#              #
-#    Updated: 2022/11/20 00:17:59 by ysantos-         ###   ########.fr        #
+#    Created: 2023/09/29 22:06:51 by ysantos-          #+#    #+#              #
+#    Updated: 2023/09/29 22:16:37 by ysantos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,33 +24,45 @@ BN = ft_lstadd_front.c ft_lstadd_back.c ft_lstclear.c ft_lstdelone.c \
 ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c \
 get_next_line_bonus.c get_next_line_utils_bonus.c 
 
-OBJ = $(SRC:.c=.o)
-BNOBJ = $(BN:.c=.o)
+OBJ_PATH = obj/
+OBJ_NAME = $(SRC:.c=.o)
+OBJ = $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
-CC = gcc
-FLAGS = -Wall -Wextra -Werror
+$(OBJ_PATH)%.o:$(SRC)%.c
+	@mkdir -p $(OBJ_PATH)
+	@cp libft.h obj/
+	@$(CC) $(FLAGS) -c $< -o $@
+
+BNOBJ_PATH = obj/
+BNOBJ_NAME = $(BN:.c=.o)
+BNOBJ = $(addprefix $(BNOBJ_PATH), $(BNOBJ_NAME))
+
+$(BNOBJ_PATH)%.o:$(BN)%.c
+	@mkdir -p $(OBJ_PATH)
+	@cp libft.h obj/
+	@$(CC) $(FLAGS) -c $< -o $@
+
+CC = cc
+FLAGS = -Wall -Wextra -Werror -g
+
 
 all: $(NAME)
 
-$(NAME):
-	@$(CC) $(FLAGS) -c $(SRC)
-	@ar rcs $(NAME) $(OBJ)
-	@ranlib $(NAME)
+$(NAME): $(OBJ)
+	@ar -rcs $(NAME) $(OBJ)
 	@echo "\033[92mLibft compiled!\033[m"
 
-bonus:
-	@$(CC) $(FLAGS) -c $(SRC) $(BN)
+bonus: $(OBJ) $(BNOBJ)
 	@ar rcs $(NAME) $(OBJ) $(BNOBJ)
-	@ranlib $(NAME)
 	@echo "\033[92mLibft with bonus compiled!\033[m"
 
 clean:
-	@/bin/rm -f *.o
-	@echo "\033[91mclean done.\033[m"
+	@/bin/rm -rf obj
+	@echo "\e[0;93mclean done.\033[m"
 
 fclean: clean
 	@/bin/rm -f $(NAME) libft.h.gch libft.so
-	@echo "\033[91mfclean done.\033[m"
+	@echo "\e[0;93mfclean done.\033[m"
 
 re: fclean all
 

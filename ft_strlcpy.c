@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 16:57:26 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 22:10:32 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/09/29 22:11:51 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
+	if (!dst || !src)
+		return (0);
 	if (dstsize == 0)
 		return (ft_strlen(src));
 	i = 0;

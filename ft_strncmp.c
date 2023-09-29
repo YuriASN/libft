@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/27 18:25:29 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 22:10:50 by ysantos-         ###   ########.fr       */
+/*   Created: 2023/09/29 22:06:49 by ysantos-          #+#    #+#             */
+/*   Updated: 2023/09/29 22:08:32 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	size_t	i;
 
 	i = 0;
+	if (!str1 && !str2)
+		return (0);
+	if (!str1 || !str2)
+		return (1);
 	while (i < n)
 	{
 		if (str1[i] != str2[i])

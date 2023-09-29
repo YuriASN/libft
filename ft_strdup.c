@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 22:49:42 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 22:09:33 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/09/29 22:10:14 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,11 @@ char	*ft_strdup(const char *str)
 	int		i;
 
 	i = 0;
+	if (!str)
+		return(NULL);
 	cpy = malloc(sizeof(char) * (ft_strlen(str) + 1));
-	if (!cpy || !str)
-		return (0);
+	if (!cpy)
+		return (NULL);
 	while (str[i])
 	{
 		cpy[i] = str[i];

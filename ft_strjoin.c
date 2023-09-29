@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 23:33:34 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 22:10:25 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/09/29 22:10:30 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*newstr;
 
 	if (!s1 || !s2)
-		return (0);
+		return (NULL);
 	newstr = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!newstr)
 		return (0);

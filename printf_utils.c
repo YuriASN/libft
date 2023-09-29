@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/05 20:59:44 by ysantos-          #+#    #+#             */
-/*   Updated: 2022/11/19 23:58:24 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/08/22 12:48:04 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	f_putnbr_u(unsigned int n, char *str, LLONG base)
 }
 
 int	f_putnbr_ul(unsigned long n)
-{	
+{
 	int			count;
 	long long	n2;
 

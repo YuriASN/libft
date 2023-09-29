@@ -6,16 +6,12 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 23:49:37 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 22:11:11 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/09/29 22:14:27 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Allocates (with malloc(3)) and returns a copy of
-’s1’ with the characters specified in ’set’ removed
-from the beginning and the end of the string. */
 static int	is_equal(char const *s1, char const *set)
 {
 	int	i;
@@ -30,6 +26,10 @@ static int	is_equal(char const *s1, char const *set)
 	return (0);
 }
 
+/*
+Allocates (with malloc(3)) and returns a copy of
+’s1’ with the characters specified in ’set’ removed
+from the beginning and the end of the string. */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		i;

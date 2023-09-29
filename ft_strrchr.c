@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 19:32:38 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/01/06 22:11:02 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/09/29 22:13:44 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
+	if (!s)
+		return (NULL);
 	i = ft_strlen(s);
 	while (i >= 0)
 	{

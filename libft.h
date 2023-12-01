@@ -6,7 +6,7 @@
 /*   By: ysantos- <ysantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 22:06:53 by ysantos-          #+#    #+#             */
-/*   Updated: 2023/09/29 22:06:55 by ysantos-         ###   ########.fr       */
+/*   Updated: 2023/12/01 11:29:29 by ysantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,15 @@ int		f_putnbr(int n);
 int		base_conversor(LLONG n, char *str, LLONG base);
 int		f_putnbr_u(unsigned int n, char *str, LLONG base);
 int		f_putnbr_ul(unsigned long n);
+
+//Own
+char	*ft_str_addcenter(char *str, int n, char *add);
+char	*ft_str_add(char *dst, char *add);
+void	ft_trimm_white_spaces(char *str);
+int		ft_is_all_spaces(char *str);
+int		ft_isspace(char c);
+char	**ft_add_pointer_to_array(void **array, void *ptr, int ptr_size);
+void	clear_one_pointer(void **array, int i);
+void	free_double_pointer(void **ptr_ptr);
 
 #endif
